@@ -673,9 +673,7 @@ class Civi_WP_Member_Sync_Members {
 			'version' => '3',
 			'sequential' => 1,
 			'contact_id' => $civi_contact_id,
-			'status_id.is_current_member' => array(
-				'IS NOT NULL' => 1
-			),
+			'status_id.is_current_member' =>  1,
 			'options' => array(
 				'limit' => 0,
 				'sort' => 'status_id.is_current_member ASC, end_date',

@@ -2001,6 +2001,7 @@ class Civi_WP_Member_Sync_Admin {
 					$flag = 'current';
 
 				} else {
+					/*
 
 					// remove current role if the user has it
 					if ( $this->plugin->users->wp_has_role( $user, $current_wp_role ) ) {
@@ -2014,6 +2015,7 @@ class Civi_WP_Member_Sync_Admin {
 
 					// set flag for action
 					$flag = 'expired';
+					*/
 
 				}
 
