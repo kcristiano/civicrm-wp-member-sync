@@ -141,9 +141,7 @@ class Civi_WP_Member_Sync_Members {
 		$memberships = civicrm_api( 'Membership', 'get', array(
 			'version' => '3',
 			'sequential' => '1',
-			'status_id.is_current_member' => array(
-				'IS NOT NULL' => 1
-			),
+			'status_id.is_current_member' => 1,
 			'options' => array(
 				'limit' => '5',
 				'offset' => $memberships_offset,
